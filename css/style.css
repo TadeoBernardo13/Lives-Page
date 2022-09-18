@@ -15,3 +15,20 @@ iframe
     border-radius: 10px;
 }
 
+.page-container
+{
+    width: 100vw;
+    height: 70vh;
+    margin-top: 5%;
+}
+
+.live-container
+{
+    width: 70%;
+    height: 100%;
+}
+
+.chat-container
+{
+    height: 100%;
+}
