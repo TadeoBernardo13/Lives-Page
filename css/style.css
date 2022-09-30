@@ -1,13 +1,11 @@
-@font-face {
-    font-family: pop;
-    src: url(./Fonts/Poppins-Medium.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 *
 {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 a
@@ -21,6 +19,13 @@ a .bi
     font-size: 25px;
 }
 
+.scrollspy
+{
+    width: 300px;
+    height: 300px;
+    overflow-y: auto;
+}
+
 iframe
 {
     border-radius: 10px;
@@ -30,7 +35,7 @@ iframe
 {
     width: 95vw;
     height: 70vh;
-    margin-top: 5%;
+    margin: 5% auto 0 auto;
 }
 
 .live-container
@@ -41,6 +46,7 @@ iframe
 
 .chat-container
 {
+    width: 25%;
     height: 100%;
 }
 
