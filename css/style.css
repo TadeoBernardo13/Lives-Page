@@ -26,6 +26,16 @@ a .bi
     overflow-y: auto;
 }
 
+.scrollspy .card
+{
+    width: 5rem;
+}
+
+.scrollspy .card .card-text
+{
+    font-size: 0.6rem;
+}
+
 iframe
 {
     border-radius: 10px;
@@ -33,6 +43,9 @@ iframe
 
 .page-container
 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 95vw;
     height: 70vh;
     margin: 5% auto 0 auto;
@@ -132,6 +145,18 @@ ul li .active .uil{
     display: flex;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive Css  */
 
 @media (max-width: 980px) {
@@ -158,4 +183,71 @@ ul li .active .uil{
     ul li .icon{
         margin: 15px 0;
     }
+}
+
+/* Phone Horizontal Orientation */
+@media (min-width: 600px) {
+    .page-container
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 80vh;
+        margin: 2% auto 0 auto;
+    }
+
+    .page-container .live-container .afterIframe .main
+    {
+        display: none;
+    }
+
+    .bttn
+    {
+        display: none;
+    }
+
+    .live-container
+    {
+        width: 130%;
+        height: 95%;
+    }
+
+    .chat-container
+    {
+        width: 90%;
+        height: 95%;
+    }   
+}
+
+@media (max-width: 600px) {
+    .page-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+    }
+
+    .page-container .live-container .afterIframe .main
+    {
+        display: none;
+    }
+
+    .bttn
+    {
+        display: none;
+    }
+
+    .live-container
+    {
+        width: 100%;
+        height: 75%;
+    }
+
+    .chat-container
+    {
+        width: 100%;
+        height: 110%;
+    }   
 }
